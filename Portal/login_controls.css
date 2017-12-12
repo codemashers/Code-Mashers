@@ -1,0 +1,43 @@
+#input-box
+{
+    background-color:lightgrey;
+    font-family: 'Segoe UI Light';
+    padding: 10px;
+    color:lightgray;
+    margin-bottom:5px;
+    border:0px;
+	font-size: 20px;
+	border-radius:10px;
+}
+
+#input-box:focus
+{
+    background-color:white;
+    font-family: 'Segoe UI';
+    color:black; 
+}
+
+#login-button,#register-button
+{
+	border-radius:10px;
+	font-size: 2vw;
+	border: 0px solid;
+	height: 50px;
+	width: 200px; 
+	margin-left: 35px;
+	margin-bottom: 5px;
+	font-family: 'Segoe ui black';
+	text-decoration: none;
+	color: white;
+}
+
+#login-button
+{
+    	background-color: red;	
+}
+
+#register-button
+{
+    	background-color: rgba(9, 238, 181, 0.88);
+}
+

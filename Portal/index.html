@@ -1,0 +1,34 @@
+<!doctype>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questoinnaire</title>
+    <link rel='stylesheet' href='login_view.css' />
+    <link rel='stylesheet' href='login_controls.css' />
+    <script src='angular.min.js'></script>
+    <script src='angular.route.js'></script>
+    <script>
+        var app = angular.module("portalApp", ["ngRoute"]);
+        app.config(function ($routeProvider) {
+            $routeProvider
+                .when("/register", {
+                    templateUrl: "registration.html"
+                })
+                .when("/login", {
+                    templateUrl: "login.html"
+                });
+        });
+
+    </script>
+</head>
+<body data-ng-app='portalApp' class='main-body'>
+    <div class='main-box'>
+        <div  class='load-view' ng-view></div>
+        <div id = 'view'>
+        <div><a href='#!login'><button value="Log in" id='login-button' data-ng-model='login-button' >Login</button></a></div>
+        <div><a href='#!register'><button value="Register" id='register-button' data-ng-model='register-button'>Register</button></a></div>   
+        </div>
+    </div>
+</body>
+</html>

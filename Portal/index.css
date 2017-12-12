@@ -1,0 +1,43 @@
+body
+{
+    	background-image: url("background.png");
+    	background-position:center;
+    	background-size: 100% 100%;
+    	background-repeat: no-repeat;
+    
+}
+.main-box
+{
+	margin-left: 1000px;
+    margin-top: 200px;
+    	
+}
+
+.main-box div button
+{
+	font-size: 2vw;
+	border: 0px solid;
+	height: 50px;
+	width: 200px; 
+	margin-left: 25px;
+	margin-bottom: 5px;
+	font-family: 'Segoe ui black';
+	text-decoration: none;
+	color: white;
+}
+
+#log-in
+{
+    	background-color: red;	
+}
+#reg
+{
+    	background-color: rgba(9, 238, 181, 0.88);
+}
+.view
+{
+	transition:all 1s linear;
+}
+#login_button,#register_button{
+	display: none;
+}
